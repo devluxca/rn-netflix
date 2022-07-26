@@ -3,9 +3,11 @@
 A clone of netflix pages with React Native (EXPO)
 
 ## Previews
-<img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/01.jpeg" width="128"/>
-<img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/02.jpeg" width="128"/>
-<img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/03.jpeg" width="128"/>
+<div style="display: flex;">
+  <img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/01.jpeg" width="128"/>
+  <img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/02.jpeg" width="128"/>
+  <img src="https://raw.githubusercontent.com/devluxca/rn-netflix/main/previews/03.jpeg" width="128"/>
+</div>
 
 ## Installation
 
