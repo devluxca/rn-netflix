@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import {DefaultTheme, Provider as PaperProvider } from 'react-native-paper'
 
-export default function App() {
+import { Routes } from './src/routes'
+
+import { StatusBar } from 'expo-status-bar'
+
+const App = () => {
+  const theme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      primary: '#E50914',
+      background: '#3C3C3C',
+      placeholder: '#C1C1C1',
+    }
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <PaperProvider theme={theme}>
+      <StatusBar backgroundColor='#000' />
+      <Routes />
+    </PaperProvider>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
